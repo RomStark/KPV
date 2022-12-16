@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002AEBB729251CB2005C7D0B /* EmailSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AEBB629251CB2005C7D0B /* EmailSignViewController.swift */; };
+		002AEBB9292523F6005C7D0B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AEBB8292523F6005C7D0B /* Service.swift */; };
+		004097A1292528C700EB7622 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 004097A0292528C700EB7622 /* FirebaseAuth */; };
+		004097A329252A6800EB7622 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004097A229252A6800EB7622 /* models.swift */; };
+		004097B32931D56A00EB7622 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 004097B22931D56A00EB7622 /* GoogleService-Info.plist */; };
+		004097B529353AD900EB7622 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004097B429353AD900EB7622 /* MainTableViewController.swift */; };
+		004097B82936502500EB7622 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 004097B72936502500EB7622 /* SnapKit */; };
+		004097BA2936DB5A00EB7622 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004097B92936DB5A00EB7622 /* MapViewController.swift */; };
+		004097BC2936DC4E00EB7622 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004097BB2936DC4E00EB7622 /* TabViewController.swift */; };
+		004097BE2936E3C400EB7622 /* CharitysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004097BD2936E3C400EB7622 /* CharitysTableViewCell.swift */; };
+		004097C02936E78700EB7622 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004097BF2936E78700EB7622 /* Extensions.swift */; };
+		00A0540A293E64A000F2B4D1 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A05409293E64A000F2B4D1 /* CharityViewController.swift */; };
+		00A0540C293FAC5500F2B4D1 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A0540B293FAC5500F2B4D1 /* GoogleSignInViewController.swift */; };
+		00A0540E294BE99100F2B4D1 /* AddCharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A0540D294BE99100F2B4D1 /* AddCharityViewController.swift */; };
+		00A05410294C6E7400F2B4D1 /* AnnotationCoordMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A0540F294C6E7400F2B4D1 /* AnnotationCoordMapViewController.swift */; };
+		00B60415293B35470075F0B3 /* AccauntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B60414293B35470075F0B3 /* AccauntViewController.swift */; };
+		00DF746128FB59E70015AEDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF746028FB59E70015AEDD /* AppDelegate.swift */; };
+		00DF746328FB59E70015AEDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF746228FB59E70015AEDD /* SceneDelegate.swift */; };
+		00DF746528FB59E70015AEDD /* OpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF746428FB59E70015AEDD /* OpenViewController.swift */; };
+		00DF746B28FB59E70015AEDD /* Charity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00DF746928FB59E70015AEDD /* Charity.xcdatamodeld */; };
+		00DF746D28FB59E90015AEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DF746C28FB59E90015AEDD /* Assets.xcassets */; };
+		00DF747028FB59E90015AEDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DF746E28FB59E90015AEDD /* LaunchScreen.storyboard */; };
+		00DF747B28FB59E90015AEDD /* CharityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF747A28FB59E90015AEDD /* CharityTests.swift */; };
+		00DF748528FB59E90015AEDD /* CharityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF748428FB59E90015AEDD /* CharityUITests.swift */; };
+		00DF748728FB59E90015AEDD /* CharityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF748628FB59E90015AEDD /* CharityUITestsLaunchTests.swift */; };
+		00DF749728FD9F020015AEDD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 00DF749628FD9F020015AEDD /* FirebaseAnalytics */; };
+		00DF749928FD9F020015AEDD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 00DF749828FD9F020015AEDD /* FirebaseDatabase */; };
+		00DF749B28FD9F020015AEDD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 00DF749A28FD9F020015AEDD /* FirebaseFirestore */; };
+		00DF749D28FD9F020015AEDD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 00DF749C28FD9F020015AEDD /* FirebaseStorage */; };
+		00DF749F28FDAA8D0015AEDD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF749E28FDAA8D0015AEDD /* APIManager.swift */; };
+		167A1C536628BED808860CA7 /* Pods_CharityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C12C0A7E207A43BB5EDC484 /* Pods_CharityTests.framework */; };
+		394C16EEC586FAFF07530E5D /* Pods_Charity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4FD4F475C6FC8D63833FB7 /* Pods_Charity.framework */; };
+		AA60130D3D40982A579994AE /* Pods_Charity_CharityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E000BFEE96F685563EF40C9 /* Pods_Charity_CharityUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00DF747728FB59E90015AEDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00DF745528FB59E70015AEDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00DF745C28FB59E70015AEDD;
+			remoteInfo = Charity;
+		};
+		00DF748128FB59E90015AEDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00DF745528FB59E70015AEDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00DF745C28FB59E70015AEDD;
+			remoteInfo = Charity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002AEBB629251CB2005C7D0B /* EmailSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignViewController.swift; sourceTree = "<group>"; };
+		002AEBB8292523F6005C7D0B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		004097A229252A6800EB7622 /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		004097B22931D56A00EB7622 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		004097B429353AD900EB7622 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		004097B92936DB5A00EB7622 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		004097BB2936DC4E00EB7622 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		004097BD2936E3C400EB7622 /* CharitysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitysTableViewCell.swift; sourceTree = "<group>"; };
+		004097BF2936E78700EB7622 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		00A05409293E64A000F2B4D1 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
+		00A0540B293FAC5500F2B4D1 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
+		00A0540D294BE99100F2B4D1 /* AddCharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharityViewController.swift; sourceTree = "<group>"; };
+		00A0540F294C6E7400F2B4D1 /* AnnotationCoordMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationCoordMapViewController.swift; sourceTree = "<group>"; };
+		00B60414293B35470075F0B3 /* AccauntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccauntViewController.swift; sourceTree = "<group>"; };
+		00DF745D28FB59E70015AEDD /* Charity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DF746028FB59E70015AEDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00DF746228FB59E70015AEDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00DF746428FB59E70015AEDD /* OpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenViewController.swift; sourceTree = "<group>"; };
+		00DF746A28FB59E70015AEDD /* Charity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Charity.xcdatamodel; sourceTree = "<group>"; };
+		00DF746C28FB59E90015AEDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00DF746F28FB59E90015AEDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00DF747128FB59E90015AEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DF747628FB59E90015AEDD /* CharityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DF747A28FB59E90015AEDD /* CharityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTests.swift; sourceTree = "<group>"; };
+		00DF748028FB59E90015AEDD /* CharityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DF748428FB59E90015AEDD /* CharityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityUITests.swift; sourceTree = "<group>"; };
+		00DF748628FB59E90015AEDD /* CharityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00DF749E28FDAA8D0015AEDD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0423D2CBBAF940CA07D42B66 /* Pods-Charity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charity.release.xcconfig"; path = "Target Support Files/Pods-Charity/Pods-Charity.release.xcconfig"; sourceTree = "<group>"; };
+		0AF6E3826779680C47E7AFC6 /* Pods-Charity-CharityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charity-CharityUITests.release.xcconfig"; path = "Target Support Files/Pods-Charity-CharityUITests/Pods-Charity-CharityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E000BFEE96F685563EF40C9 /* Pods_Charity_CharityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charity_CharityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C1DA5720E7B645ABD46DA0 /* Pods-CharityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityTests.debug.xcconfig"; path = "Target Support Files/Pods-CharityTests/Pods-CharityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F84E3F12E73E588109ADD21 /* Pods-Charity-CharityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charity-CharityUITests.debug.xcconfig"; path = "Target Support Files/Pods-Charity-CharityUITests/Pods-Charity-CharityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C12C0A7E207A43BB5EDC484 /* Pods_CharityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A078D4E78304D0689E579F /* Pods-Charity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charity.debug.xcconfig"; path = "Target Support Files/Pods-Charity/Pods-Charity.debug.xcconfig"; sourceTree = "<group>"; };
+		B906477845074966706F6738 /* Pods-CharityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityTests.release.xcconfig"; path = "Target Support Files/Pods-CharityTests/Pods-CharityTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE4FD4F475C6FC8D63833FB7 /* Pods_Charity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00DF745A28FB59E70015AEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF749928FD9F020015AEDD /* FirebaseDatabase in Frameworks */,
+				004097A1292528C700EB7622 /* FirebaseAuth in Frameworks */,
+				00DF749D28FD9F020015AEDD /* FirebaseStorage in Frameworks */,
+				004097B82936502500EB7622 /* SnapKit in Frameworks */,
+				00DF749728FD9F020015AEDD /* FirebaseAnalytics in Frameworks */,
+				00DF749B28FD9F020015AEDD /* FirebaseFirestore in Frameworks */,
+				394C16EEC586FAFF07530E5D /* Pods_Charity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DF747328FB59E90015AEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167A1C536628BED808860CA7 /* Pods_CharityTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DF747D28FB59E90015AEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA60130D3D40982A579994AE /* Pods_Charity_CharityUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002AEBB229251C62005C7D0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				002AEBB8292523F6005C7D0B /* Service.swift */,
+				004097A229252A6800EB7622 /* models.swift */,
+				004097BF2936E78700EB7622 /* Extensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		002AEBB429251C72005C7D0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				004097BD2936E3C400EB7622 /* CharitysTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002AEBB529251C7C005C7D0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00A05408293E641400F2B4D1 /* App */,
+				00A05407293E63F500F2B4D1 /* OpenRegAuth */,
+				004097BB2936DC4E00EB7622 /* TabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0040979F292528C700EB7622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE4FD4F475C6FC8D63833FB7 /* Pods_Charity.framework */,
+				1E000BFEE96F685563EF40C9 /* Pods_Charity_CharityUITests.framework */,
+				8C12C0A7E207A43BB5EDC484 /* Pods_CharityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00A05407293E63F500F2B4D1 /* OpenRegAuth */ = {
+			isa = PBXGroup;
+			children = (
+				002AEBB629251CB2005C7D0B /* EmailSignViewController.swift */,
+				00DF746428FB59E70015AEDD /* OpenViewController.swift */,
+				00A0540B293FAC5500F2B4D1 /* GoogleSignInViewController.swift */,
+			);
+			path = OpenRegAuth;
+			sourceTree = "<group>";
+		};
+		00A05408293E641400F2B4D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				004097B429353AD900EB7622 /* MainTableViewController.swift */,
+				00B60414293B35470075F0B3 /* AccauntViewController.swift */,
+				004097B92936DB5A00EB7622 /* MapViewController.swift */,
+				00A05409293E64A000F2B4D1 /* CharityViewController.swift */,
+				00A0540D294BE99100F2B4D1 /* AddCharityViewController.swift */,
+				00A0540F294C6E7400F2B4D1 /* AnnotationCoordMapViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		00DF745428FB59E70015AEDD = {
+			isa = PBXGroup;
+			children = (
+				00DF745F28FB59E70015AEDD /* Charity */,
+				00DF747928FB59E90015AEDD /* CharityTests */,
+				00DF748328FB59E90015AEDD /* CharityUITests */,
+				00DF745E28FB59E70015AEDD /* Products */,
+				0040979F292528C700EB7622 /* Frameworks */,
+				CD91D904A92E6B234F4DC5F7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		00DF745E28FB59E70015AEDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DF745D28FB59E70015AEDD /* Charity.app */,
+				00DF747628FB59E90015AEDD /* CharityTests.xctest */,
+				00DF748028FB59E90015AEDD /* CharityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00DF745F28FB59E70015AEDD /* Charity */ = {
+			isa = PBXGroup;
+			children = (
+				00DF746028FB59E70015AEDD /* AppDelegate.swift */,
+				00DF746228FB59E70015AEDD /* SceneDelegate.swift */,
+				002AEBB429251C72005C7D0B /* View */,
+				002AEBB229251C62005C7D0B /* Model */,
+				002AEBB529251C7C005C7D0B /* Controller */,
+				00DF746C28FB59E90015AEDD /* Assets.xcassets */,
+				00DF746E28FB59E90015AEDD /* LaunchScreen.storyboard */,
+				004097B22931D56A00EB7622 /* GoogleService-Info.plist */,
+				00DF747128FB59E90015AEDD /* Info.plist */,
+				00DF746928FB59E70015AEDD /* Charity.xcdatamodeld */,
+				00DF749E28FDAA8D0015AEDD /* APIManager.swift */,
+			);
+			path = Charity;
+			sourceTree = "<group>";
+		};
+		00DF747928FB59E90015AEDD /* CharityTests */ = {
+			isa = PBXGroup;
+			children = (
+				00DF747A28FB59E90015AEDD /* CharityTests.swift */,
+			);
+			path = CharityTests;
+			sourceTree = "<group>";
+		};
+		00DF748328FB59E90015AEDD /* CharityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00DF748428FB59E90015AEDD /* CharityUITests.swift */,
+				00DF748628FB59E90015AEDD /* CharityUITestsLaunchTests.swift */,
+			);
+			path = CharityUITests;
+			sourceTree = "<group>";
+		};
+		CD91D904A92E6B234F4DC5F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5A078D4E78304D0689E579F /* Pods-Charity.debug.xcconfig */,
+				0423D2CBBAF940CA07D42B66 /* Pods-Charity.release.xcconfig */,
+				6F84E3F12E73E588109ADD21 /* Pods-Charity-CharityUITests.debug.xcconfig */,
+				0AF6E3826779680C47E7AFC6 /* Pods-Charity-CharityUITests.release.xcconfig */,
+				51C1DA5720E7B645ABD46DA0 /* Pods-CharityTests.debug.xcconfig */,
+				B906477845074966706F6738 /* Pods-CharityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00DF745C28FB59E70015AEDD /* Charity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DF748A28FB59E90015AEDD /* Build configuration list for PBXNativeTarget "Charity" */;
+			buildPhases = (
+				688B2EF44331D38168C6DAAB /* [CP] Check Pods Manifest.lock */,
+				00DF745928FB59E70015AEDD /* Sources */,
+				00DF745A28FB59E70015AEDD /* Frameworks */,
+				00DF745B28FB59E70015AEDD /* Resources */,
+				D7312CFADBAE8534FBBA0725 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Charity;
+			packageProductDependencies = (
+				00DF749628FD9F020015AEDD /* FirebaseAnalytics */,
+				00DF749828FD9F020015AEDD /* FirebaseDatabase */,
+				00DF749A28FD9F020015AEDD /* FirebaseFirestore */,
+				00DF749C28FD9F020015AEDD /* FirebaseStorage */,
+				004097A0292528C700EB7622 /* FirebaseAuth */,
+				004097B72936502500EB7622 /* SnapKit */,
+			);
+			productName = Charity;
+			productReference = 00DF745D28FB59E70015AEDD /* Charity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00DF747528FB59E90015AEDD /* CharityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DF748D28FB59E90015AEDD /* Build configuration list for PBXNativeTarget "CharityTests" */;
+			buildPhases = (
+				61FA7825F023917ED48BB107 /* [CP] Check Pods Manifest.lock */,
+				00DF747228FB59E90015AEDD /* Sources */,
+				00DF747328FB59E90015AEDD /* Frameworks */,
+				00DF747428FB59E90015AEDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DF747828FB59E90015AEDD /* PBXTargetDependency */,
+			);
+			name = CharityTests;
+			productName = CharityTests;
+			productReference = 00DF747628FB59E90015AEDD /* CharityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00DF747F28FB59E90015AEDD /* CharityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DF749028FB59E90015AEDD /* Build configuration list for PBXNativeTarget "CharityUITests" */;
+			buildPhases = (
+				87E2EFF3949A9A1B9251BBE7 /* [CP] Check Pods Manifest.lock */,
+				00DF747C28FB59E90015AEDD /* Sources */,
+				00DF747D28FB59E90015AEDD /* Frameworks */,
+				00DF747E28FB59E90015AEDD /* Resources */,
+				8C396826B6E1B93EF5DD78FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DF748228FB59E90015AEDD /* PBXTargetDependency */,
+			);
+			name = CharityUITests;
+			productName = CharityUITests;
+			productReference = 00DF748028FB59E90015AEDD /* CharityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00DF745528FB59E70015AEDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					00DF745C28FB59E70015AEDD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					00DF747528FB59E90015AEDD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 00DF745C28FB59E70015AEDD;
+					};
+					00DF747F28FB59E90015AEDD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 00DF745C28FB59E70015AEDD;
+					};
+				};
+			};
+			buildConfigurationList = 00DF745828FB59E70015AEDD /* Build configuration list for PBXProject "Charity" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00DF745428FB59E70015AEDD;
+			packageReferences = (
+				00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				004097B62936502500EB7622 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 00DF745E28FB59E70015AEDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00DF745C28FB59E70015AEDD /* Charity */,
+				00DF747528FB59E90015AEDD /* CharityTests */,
+				00DF747F28FB59E90015AEDD /* CharityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00DF745B28FB59E70015AEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF747028FB59E90015AEDD /* LaunchScreen.storyboard in Resources */,
+				00DF746D28FB59E90015AEDD /* Assets.xcassets in Resources */,
+				004097B32931D56A00EB7622 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DF747428FB59E90015AEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DF747E28FB59E90015AEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61FA7825F023917ED48BB107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CharityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688B2EF44331D38168C6DAAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Charity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E2EFF3949A9A1B9251BBE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Charity-CharityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C396826B6E1B93EF5DD78FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Charity-CharityUITests/Pods-Charity-CharityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Charity-CharityUITests/Pods-Charity-CharityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Charity-CharityUITests/Pods-Charity-CharityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7312CFADBAE8534FBBA0725 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Charity/Pods-Charity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Charity/Pods-Charity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Charity/Pods-Charity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DF745928FB59E70015AEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A0540A293E64A000F2B4D1 /* CharityViewController.swift in Sources */,
+				00DF746B28FB59E70015AEDD /* Charity.xcdatamodeld in Sources */,
+				002AEBB9292523F6005C7D0B /* Service.swift in Sources */,
+				00DF746528FB59E70015AEDD /* OpenViewController.swift in Sources */,
+				004097BA2936DB5A00EB7622 /* MapViewController.swift in Sources */,
+				00B60415293B35470075F0B3 /* AccauntViewController.swift in Sources */,
+				004097A329252A6800EB7622 /* models.swift in Sources */,
+				004097B529353AD900EB7622 /* MainTableViewController.swift in Sources */,
+				004097BC2936DC4E00EB7622 /* TabViewController.swift in Sources */,
+				002AEBB729251CB2005C7D0B /* EmailSignViewController.swift in Sources */,
+				004097C02936E78700EB7622 /* Extensions.swift in Sources */,
+				004097BE2936E3C400EB7622 /* CharitysTableViewCell.swift in Sources */,
+				00A0540E294BE99100F2B4D1 /* AddCharityViewController.swift in Sources */,
+				00DF749F28FDAA8D0015AEDD /* APIManager.swift in Sources */,
+				00DF746128FB59E70015AEDD /* AppDelegate.swift in Sources */,
+				00A0540C293FAC5500F2B4D1 /* GoogleSignInViewController.swift in Sources */,
+				00A05410294C6E7400F2B4D1 /* AnnotationCoordMapViewController.swift in Sources */,
+				00DF746328FB59E70015AEDD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DF747228FB59E90015AEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF747B28FB59E90015AEDD /* CharityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DF747C28FB59E90015AEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF748528FB59E90015AEDD /* CharityUITests.swift in Sources */,
+				00DF748728FB59E90015AEDD /* CharityUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00DF747828FB59E90015AEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00DF745C28FB59E70015AEDD /* Charity */;
+			targetProxy = 00DF747728FB59E90015AEDD /* PBXContainerItemProxy */;
+		};
+		00DF748228FB59E90015AEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00DF745C28FB59E70015AEDD /* Charity */;
+			targetProxy = 00DF748128FB59E90015AEDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00DF746E28FB59E90015AEDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DF746F28FB59E90015AEDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00DF748828FB59E90015AEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00DF748928FB59E90015AEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00DF748B28FB59E90015AEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A078D4E78304D0689E579F /* Pods-Charity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X58ZVA4AH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Charity/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cs.Charity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00DF748C28FB59E90015AEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0423D2CBBAF940CA07D42B66 /* Pods-Charity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X58ZVA4AH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Charity/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cs.Charity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		00DF748E28FB59E90015AEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C1DA5720E7B645ABD46DA0 /* Pods-CharityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X58ZVA4AH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cs.CharityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Charity.app/Charity";
+			};
+			name = Debug;
+		};
+		00DF748F28FB59E90015AEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B906477845074966706F6738 /* Pods-CharityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X58ZVA4AH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cs.CharityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Charity.app/Charity";
+			};
+			name = Release;
+		};
+		00DF749128FB59E90015AEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F84E3F12E73E588109ADD21 /* Pods-Charity-CharityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X58ZVA4AH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cs.CharityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Charity;
+			};
+			name = Debug;
+		};
+		00DF749228FB59E90015AEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF6E3826779680C47E7AFC6 /* Pods-Charity-CharityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X58ZVA4AH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cs.CharityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Charity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00DF745828FB59E70015AEDD /* Build configuration list for PBXProject "Charity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF748828FB59E90015AEDD /* Debug */,
+				00DF748928FB59E90015AEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DF748A28FB59E90015AEDD /* Build configuration list for PBXNativeTarget "Charity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF748B28FB59E90015AEDD /* Debug */,
+				00DF748C28FB59E90015AEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DF748D28FB59E90015AEDD /* Build configuration list for PBXNativeTarget "CharityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF748E28FB59E90015AEDD /* Debug */,
+				00DF748F28FB59E90015AEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DF749028FB59E90015AEDD /* Build configuration list for PBXNativeTarget "CharityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF749128FB59E90015AEDD /* Debug */,
+				00DF749228FB59E90015AEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		004097B62936502500EB7622 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		004097A0292528C700EB7622 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		004097B72936502500EB7622 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 004097B62936502500EB7622 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		00DF749628FD9F020015AEDD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		00DF749828FD9F020015AEDD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		00DF749A28FD9F020015AEDD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		00DF749C28FD9F020015AEDD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DF749528FD9F020015AEDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		00DF746928FB59E70015AEDD /* Charity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00DF746A28FB59E70015AEDD /* Charity.xcdatamodel */,
+			);
+			currentVersion = 00DF746A28FB59E70015AEDD /* Charity.xcdatamodel */;
+			path = Charity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00DF745528FB59E70015AEDD /* Project object */;
+}
